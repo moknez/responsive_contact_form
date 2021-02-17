@@ -13,4 +13,36 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #cee1ff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #689dff;
+    clip-path: polygon(86% 0, 100% 0, 100% 100%, 60% 100%);
+}    
+.container {
+    z-index: 12;
+    max-width: 1050px;
+    width: 100%;
+   background: #fff; 
+  border-radius: 12px;
+  margin: 0 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.content .image-box {
+    
 }
