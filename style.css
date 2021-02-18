@@ -44,5 +44,64 @@ body::before {
 }
 
 .content .image-box {
-    
+    max-width: 55%;
+}
+.content .image-box img{
+    width: 100%;
+}
+.content .topic{
+    font-size: 23px;
+    font-weight: 600;
+    color: #ff0000;
+}
+.content form {
+    width: 40%;
+    margin-right: 30px;
+}
+.content .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+.content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    padding-left: 16px;
+    background: #d2e4ff;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.content .input-box input:focus,
+.content .image-box input:valid {
+    border-color: #ff0000;
+    background-color: #fff;
+}
+.content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 14px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3 ease;
+}
+
+.content .input-box input:focus ~ label,
+.content .image-box input:valid ~ label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: hsl(0, 100%, 50%);
+    background: #fff ;
+}
+.content .message-box {
+    min-height: 100px;
+    position: relative;
 }
