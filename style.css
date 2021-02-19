@@ -105,3 +105,66 @@ body::before {
     min-height: 100px;
     position: relative;
 }
+.content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #ffe8e8;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.content .message-box textarea:focus {
+    border-color: #ff0000;
+    background-color: #fff;
+}
+.content .message-box label {
+    position: absolute;
+    font-size: 15px;
+    color: #636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.content .message-box textarea:focus ~ label {
+    left: 12px;
+    top: -10px;
+    color: #ba24c2;
+    font-size: 12px;
+    background: #fff;
+}
+.content .input-box input[type="submit"] {
+    color: #fff;
+    background: #ff0000;
+    padding-left: 0;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover {
+    background-color: #3d94db;
+}
+
+
+@media (max-width:1000px) {
+    .content .image-box {
+        max-width: 70%;
+    }
+    .content {
+        padding: 10px 0;
+    }
+}
+@media (max-width:900px) {
+    .content .image-box {
+        display: none;
+    }
+    .content form{
+        width: 100%;
+        margin-left: 30px;
+    }
+}
